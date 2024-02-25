@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export default function Product({ item }) {
   let { counter, setCounter, addToCart } = useContext(cartContext);
   let [btnLoading, setBtnLoading] = useState(true);
-
+// 
   async function addProductToCart(productId) {
     setBtnLoading(false);
     let data = await addToCart(productId);
